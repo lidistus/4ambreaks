@@ -25,6 +25,7 @@ a:hover {
   color: blue;
 }
 
+
  /* Frame for website */
 
 .static-box {
@@ -36,9 +37,10 @@ a:hover {
 .container-grid-block {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: [Vertical] 36px [Content] 3fr [Content-2] 1fr [Vertical-2] 35px;
+    grid-template-columns: [Vertical] 35px [Content] 3fr [Content-2] 1fr [Vertical-2] 35px;
     grid-template-rows: 1fr 1fr 220px repeat(4, 1fr);
     justify-items: center;
+
   }
 
 .header {
@@ -94,10 +96,13 @@ a:hover {
 }
 
 .content-vertical-text-right {
-
+  width: 35px;
   height: 220px;
-  grid-column-start: 1;
-  grid-row-start: 2;
+  grid-column: 4;
+  grid-row: 3;
+  display: flex;
+  justify-content: center;
+  flex-direction: start;
 
 }
 
@@ -112,7 +117,14 @@ a:hover {
 }
 
 .content-right {
-
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #fff;
+  max-width: 200px;
 }
 
 
@@ -120,11 +132,20 @@ a:hover {
 .content-header-text {
   padding-left: 10px;
   padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 6;
 }
 
 .content-body-text {
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 10px;
   padding-right: 10px;
+  word-wrap: break-word;
 }
 
 .vertical-text-left {
@@ -201,12 +222,12 @@ padding: 8px;
 /* Content Styling */
 
 .content-vertical-style {
-  background: linear-gradient(-90deg, rgba(179, 227, 255, 0.25) 0%, rgba(179, 227, 255, 0) 80%);
-  outline-style: solid;
+  background: linear-gradient(-90deg, rgba(179, 255, 201, 0.25) 0%, rgba(45, 45, 45, 0) 100%);  outline-style: solid;
   outline-width: 2px;
   outline-color: #fff;
   text-transform: uppercase;
 }
+
 
 .margin-fix {
   margin: auto;
