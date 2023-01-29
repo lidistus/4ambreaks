@@ -1,0 +1,213 @@
+/* */
+
+/* Font &or Special Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* Foundational changes */
+
+body {
+  background-color: #0F1017;
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Share Tech Mono';
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+ /* Frame for website */
+
+.static-box {
+  margin: auto;
+  width: 850px;
+  padding: 25px;
+}
+
+.container-grid-block {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: [Vertical] 36px [Content] 3fr [Content-2] 1fr [Vertical-2] 35px;
+    grid-template-rows: 1fr 1fr 220px repeat(4, 1fr);
+    justify-items: center;
+  }
+
+.header {
+  
+}
+
+.logo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 1;
+  margin: auto;
+}
+
+.social-media {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row: 1;
+  display: flex;
+  margin-left: auto;
+  padding-left: 6px;
+  gap: 25px;
+  margin-top: 3px;
+}
+
+.navbar-left {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 2;
+  width: 100%;
+  display: flex;
+  flex-basis: 0;
+  background: linear-gradient(180deg, rgba(179, 227, 255, 0.25) 0%, rgba(179, 227, 255, 0) 80%);
+}
+
+.navbar-right {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row: 2;
+  width: 100%;
+  display: flex;
+  flex-basis: 0;
+  background: linear-gradient(180deg, rgba(179, 227, 255, 0.25) 0%, rgba(179, 227, 255, 0) 80%);
+}
+
+.content-vertical-text-left {
+  width: 35px;
+  height: 220px;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  display: flex;
+  justify-content: center;
+  flex-direction: start;
+}
+
+.content-vertical-text-right {
+
+  height: 220px;
+  grid-column-start: 1;
+  grid-row-start: 2;
+
+}
+
+.content-left {
+  grid-column: 2;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #fff;
+  margin-left: -18px;
+}
+
+.content-right {
+
+}
+
+
+
+.content-header-text {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content-body-text {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.vertical-text-left {
+writing-mode: vertical-rl;
+text-orientation: mixed;
+-moz-transform: scale(-1, -1);
+-webkit-transform: scale(-1, -1);
+-o-transform: scale(-1, -1);
+-ms-transform: scale(-1, -1);
+transform: scale(-1, -1);
+
+}
+
+.vertical-text-right {
+writing-mode: vertical-rl;
+text-orientation: mixed;
+vertical-align: center;
+margin:auto;
+}
+
+
+
+
+/* This is for styling */
+
+.static-box-style {
+  background-color: #060F12;
+  background-image: url("staticboxbackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 20px black;
+}
+
+.button-generic {
+width: 100%;
+height: 40px;
+}
+
+/* Navbar Styling */
+
+.navbar-style {
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: #FFFFFF;
+  border-bottom-color: #999999;
+  border-right-color: #CCCCCC;
+  border-left-color: #CCCCCC;
+  height: 35px;
+  justify-content: center;
+  
+
+}
+
+.navbar-button {
+box-sizing: content-box;
+display: flex;
+flex-grow: 1;
+font-size: 18px;
+text-transform: uppercase;
+justify-content: center;
+padding: 8px;
+}
+
+.navbar-button:hover {
+  background-color: red;
+  }
+
+.navbar-spacer {
+  width: 2px;
+  height: 100%;
+  background-color: #CCC;
+}
+
+/* Content Styling */
+
+.content-vertical-style {
+  background: linear-gradient(-90deg, rgba(179, 227, 255, 0.25) 0%, rgba(179, 227, 255, 0) 80%);
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #fff;
+  text-transform: uppercase;
+}
+
+.margin-fix {
+  margin: auto;
+}
